@@ -11,7 +11,7 @@ const MenuList = () => {
   useEffect(() => {
     // Define o item ativo com base na URL
     switch (location.pathname) {
-      case '/home':
+      case '/':
         setActiveItem('Início');
         break;
       case '/novo-curriculo':
@@ -38,7 +38,7 @@ const MenuList = () => {
   return (
     <div style={{ width: '90%' }}>
       <ul className={styles.menuList}>
-        <Link to="/home">
+        <Link to="/">
           <MenuItem
             icon={<FaHome />}
             label="Início"
